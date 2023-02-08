@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style type="text/css">
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Georgia;
+  background-image:url(https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+nav{
+  background: black;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  font-family: Segoe Script;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  padding-left: 1px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  
+}
+a.active,a:hover{
+  background: purple ;
+  font-size: 20px;
+  transition: .5s;
+  color: solid white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: orange;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: transparent;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+</style>
+
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><font color="white">Rhyth</font><i><font color= "red">M</font></i></label>
+      <ul>
+         <li><a href="Homepage.html">Home</a></li>
+        <li><a href="Playlistpage.html">Playlist</a></li>
+        <li><a class ="active" href="#">Albums</a></li>
+        
+        <li><a href="Genrepage.html">Genre</a></li>
+      </ul>
+    </nav>
+    
+  </body>
+</html>
+<style>
+  
+div.gallery {
+  border: 1px transparent;
+  
+}
+
+div.gallery:hover {
+  border: 1px transparent;
+ 
+}
+
+div.gallery img {
+  width: 100%;
+  height: 100%;
+ 
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  
+}
+div.image:hover{
+  transform: scaleX(-1);
+}
+
+* {
+  box-sizing: border-box;
+  border-radius: 8px;
+  
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+  
+}
+h2
+{
+  text-align: center;
+  background-color: rgba(0 2 5 66);
+  
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    
+    
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .responsive {
+    width: 100%;
+
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Ilayaraja.html">
+      <div class="image">
+      <img src="https://m.hindustantimes.com/rf/image_size_960x540/HT/p2/2018/03/13/Pictures/concert-maestro-ilayaraja-enthralled-music-lovers-first_49150ca4-2677-11e8-9f95-06a811d7e716.jpg" alt= "ilayaraja" width="800" height="auto">
+    </a></div>
+    <div class="desc">Endrum Ilayaraja</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Yuvan.html">
+      <div class="image">
+      <img src="https://tamil.stage3.in/root_upld/general-news/2018/01/ART045668436021407/org_71606201801231106.jpg" alt= "yuvan s raja" width="800" height="auto">
+    </a></div>
+    <div class="desc">U1</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="ARR.html">
+      <div class="image">
+      <img src="https://images.indianexpress.com/2019/01/ar-rahman-top-tamil-songs-from-the-90s-1200.jpg" alt= "A R rahman" width="800" height="auto">
+    </a></div>
+    <div class="desc">A R R</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Hanszimmer.htm">
+      <div class="image">
+      <img src="https://i.ytimg.com/vi/DwiEDAsWpJs/maxresdefault.jpg" alt= "Hans Zimmer" width="800" height="auto">
+    </a></div>
+    <div class="desc">Rush</div>
+  </div>
+</div>
+
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Rare.html">
+      <div class="image">
+      <img src="https://www.kiss925.com/wp-content/uploads/sites/59/2019/12/selena-gomez-rare-1024x399-e1577046724182-1024x576.jpg" alt="Cinque Terre" width="800"
+      height="auto"  >   </a></div>
+    <div class="desc">Rare
+
+</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="ImagineDragons.html">
+      <div class="image">
+      <img src="https://roundhouse-assets.s3.amazonaws.com/assets/Image/13275-fitandcrop-1200x681.jpg" alt="Mountains" width="800" height="auto">
+    </a></div>
+    <div class="desc">Evolve</div>
+  </div>
+</div>
+
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Purpose.html">
+      <div class="image">
+      <img src="https://www.grammy.com/sites/com/files/styles/news_detail_header/public/news/r-7717555-1447497442-7892.jpeg.jpg?itok=zq_E8MV0" alt="justin" width="800" height="auto">
+    </a></div>
+    <div class="desc">Purpose</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Ariana.html">
+      <div class="image">
+      <img src="https://www.pluggedin.com/wp-content/uploads/2020/01/Ariana__Thank_You_Next__Large.jpg" alt="ariana" width="800" height="auto">
+    </a></div>
+    <div class="desc">Thank you, next.</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Honeysingh.html">
+      <div class="image">
+      <img src="https://i.ytimg.com/vi/6Iovt3Pe0S4/maxresdefault.jpg" alt= "honey singh" width="800" height="auto">
+    </a></div>
+    <div class="desc">Desi Kalakaar</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Illuminate.html">
+      <div class="image">
+      <img src="https://www.pluggedin.com/wp-content/uploads/2020/01/Shawn_Mendes__Illuminate__Large.jpg-1024x587.jpeg" alt="sm" width="800" height="auto">
+    </a></div>
+    <div class="desc">Illuminate</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Chainsmokers.html">
+      <div class="image">
+      <img src="https://music.mxdwn.com/wp-content/uploads/2016/12/collage-e1481165261413-1280x720.jpg" alt=" collage" width="800" height="auto">
+    </a></div>
+    <div class="desc">Collage</div>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Charlie.html">
+      <div class="image">
+      <img src="https://rdcnewscdn.realtor.com/wp-content/uploads/2017/12/Charlie-Puth-1024x576.jpg" alt="charlie puth" width="1300" height="auto">
+    </a></div>
+    <div class="desc">Voice notes</div>
+  </div>
+</div>
+
+
+<div class="clearfix"></div>
+
+</body>
+</html>
