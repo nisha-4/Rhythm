@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script></head>
+    <style type="text/css">
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: Georgia;
+  background-image: url(https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav{
+  background: black;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  font-family: Segoe Script;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  padding-left: 1px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  
+}
+.active{
+  background-color: purple;
+}
+a:hover{
+  background: transparent ;
+  font-size: 20px;
+  transition: .5s;
+  color: solid white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  visibility: hidden;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: orange;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: transparent;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .mySlides {
+  visibility: hidden;
+}
+
+
+section{
+  visibility: none;
+}
+.flip-box{
+  visibility: hidden;
+  display: none;
+}
+
+.flip-box-inner {
+  visibility: hidden;
+}
+.flip-box-front, .flip-box-back {
+  visibility: hidden;
+}
+h2{
+  visibility: hidden;
+}
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  float: left;
+  padding-left: 1px
+
+}
+.mySlides {
+  display: none;
+}
+@-webkit-keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+
+
+h2{
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  float: left;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+p.pright{
+  color:white;
+  font-size: 20px;
+  display: inline-block;
+ 
+}
+
+p.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:transparent;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #111;
+  opacity: 0.7;
+  text-align: center;
+  align-items: center;
+  color: transparent;
+  transform: rotateY(180deg);
+}
+   
+section{
+      text-align:left ;
+      width:500px;
+      align-items: right;
+      height: auto;
+      float:right;
+      margin-right:4px;
+      font-family: Calibri;
+
+    }
+
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 450px;
+  border: transparent;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:transparent;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #111;
+  opacity: 0.7;
+  text-align: center;
+  align-items: center;
+  color: transparent;
+  transform: rotateY(180deg);
+}
+.Recent{
+   position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, #fff, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  float: left;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+}
+h3{
+  color: white;
+}
+.footer {
+            
+            left: 0;
+            margin-top: 1550px;
+            width: 100%;
+            background: linear-gradient(to bottom, darkgrey 0%, black 50%);
+            color: white;
+            text-align: center;
+            position: bottom;
+            padding: 30px;
+          
+        }
+
+        
+button{
+  border-radius: 30%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent;
+  color: yellow;
+  border-color: orange;
+
+}
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+
+</style>
+
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><font color="white">Rhyth</font><i><font color= "red">M</font></i></label>
+      <ul>
+         <li><a class="active" href="Homepage.html">Home</a></li>
+        <li><a href="Playlistpage.html">Playlist</a></li>
+        <li><a href="Albumpage.html">Albums</a></li>
+        <li><a href="Genrepage.html">Genre</a></li>
+      </ul>
+    </nav>
+    <br>
+    <section>
+      <div class="Recent">
+        <h3>Recent Releases</h3></div>
+<marquee direction="up">
+  <p class="pright">
+   <img src="https://www.pinkvilla.com/files/styles/fbimagesection/public/s_karthik_subbarajs_story_from_putham_pudhu_kaalai.jpg?itok=IIRoXRYo" style="width: 90%" "margin-bottom: 30px;">
+   <br>
+   <br>
+    <img src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2020/07/shakuntala-devi-movie-review-2.jpg" style="width: 90%;" >
+    <br><br>
+    <img src="https://www.nowrunning.com/content/movie/2020/sufiy-24545/bg_sufi.jpg" style="width: 90%;" >
+    <br><br>
+    <img src="https://www.pinkvilla.com/files/styles/amp_metadata_content_image/public/chhalaang_first_poster_rajkummar_rao_and_nushrat_bharucha_starrer_gets_a_new_release_date.jpg" style="width: 90%;" >
+<br><br>
+<img src="https://thandoratimes.com/flcimgs/review/penguin-movie-review.jpg?ts=1604333156" style="width: 90%;">
+   
+ 
+ </p>
+</marquee></section>
+    <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <!--<div class="numbertext">1 / 3</div>-->
+    <img src="https://www.wallpapertip.com/wmimgs/71-719253_hd-ed-sheeran-wallpapers-01-hd-ed-sheeran.jpg" style="width:98%">
+    
+  </div>
+
+  <div class="mySlides fade">
+   
+    <img src="https://www.xtrafondos.com/en/descargar.php?id=3795&resolucion=3840x2160.jpg" style="width:98%">
+   
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="https://i.pinimg.com/originals/94/98/12/949812f6e825b3ad2005f4608642f746.jpg" style="width:98%; ">
+    
+  </div>
+  <div class="mySlides fade">
+    <img src="https://images.alphacoders.com/101/1012617.jpg" style="width:98%">
+   
+  </div>
+   <div class="mySlides fade">
+    <img src="https://www.newsbugz.com/wp-content/uploads/2018/04/Vidya-Vox-Images-8-1280x720.jpg" style="width:98%">
+   
+  </div>
+ 
+
+
+<h2 style="text-align:center">MOST PLAYED.</h2>
+
+
+<div class="w3-row-padding w3-margin-top">
+
+<div class="w3-third">
+<div class="w3-card">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img src="https://m.media-amazon.com/images/M/MV5BMzRiZGZmYWMtMmNhYy00NmE3LTgxZjItMDc1YzMxNTExM2VlXkEyXkFqcGdeQXVyMTEwNjA3NjE1._V1_.jpg" style="width:100%;height: 100%">
+</div>
+<div class="flip-box-back">
+    
+    
+    <form action="Ohmykadavulepage.html"><br><br>
+
+    <button type="submit">Click to listen</button>
+</form>
+    
+         <div class="w3-container">
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img src="https://i.pinimg.com/736x/10/62/5c/10625cee9cfce6268f8bba8906be1683.jpg" style="width:100%; height: 100%"></div>
+
+<div class="flip-box-back">
+      <form action="Kannum.html"><br><br>
+     <p><button type="submit">Click to Listen</button></p></form>
+      <div class="w3-container">
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img src="https://bestoftheyear.in/wp-content/uploads/2016/03/zindagi-na-milegi-dobara.jpg" style="width:100%;height: 100%">
+</div>
+<div class="flip-box-back">
+      <br><br>
+      <form action="Zindaginamilegidobaara.html"><br><br>
+     <p><button type="submit">Click to Listen</button></p></form>
+    
+      <div class="flip-box-back">
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="w3-row-padding w3-margin-top">
+
+<div class="w3-third">
+<div class="w3-card">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img src="https://www.binged.com/wp-content/uploads/2020/07/Dil-Bechara-Binged-com.jpg" style="width:100%; height: 100%">
+</div>
+<div class="flip-box-back"><br> <br>
+   <form action="Dilbechara.html"><br><br>
+     <p><button type="submit">Click to Listen</button></p></form>
+    
+     
+      <div class="w3-container">
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="w3-third">
+<div class="w3-card">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img src="https://www.99images.com/photos/movies-tv/bigil/bigil-movie-latest-hd-photos-posters-wallpapers-download-1080p-50bg.jpg?v=1577308442" style="width:100%; height: 100%">
+</div>
+<div class="flip-box-back">
+      <br> <br>
+       <form action="Bigil.html"><br><br>
+     <p><button type="submit">Click to Listen</button></p></form>
+    
+      <div class="w3-container">
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="w3-third">
+<div class="w3-card">
+  <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+<img src="https://www.binged.com/wp-content/uploads/2020/08/Maniyarayile-Ashokan.jpg" style="width:100%;height: 100%">
+</div>
+<div class="flip-box-back">
+     <br><br>
+       <form action="Maniyarayile.html"><br><br>
+     <p><button type="submit">Click to Listen</button></p></form>
+    
+     <div class="w3-container">
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+ <div class="footer">
+      
+                <h5class="monospace">RHYTHM &#169;</h5>
+                
+                </div>
+                
+<script type="text/javascript">
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+</html>
