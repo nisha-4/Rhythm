@@ -1,0 +1,466 @@
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style type="text/css">
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}nav{
+  background: black;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  
+}
+a.active,a:hover{
+  background: transparent ;
+  font-size: 20px;
+  transition: .5s;
+  color: solid white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: orange;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: transparent;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+</style>
+</head>
+<head>
+<title>A. R. Rahman Available Albums</title>
+<style>
+ @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"); 
+:root {
+  --color: #faa700;
+  --color-light: #f5ede1;
+  --dark: #a7a7a7;
+  --dark: #8a8a8a;
+  --darker: #303030;
+  --sans-serif: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--sans-serif);
+  background: #eeeeee;
+}
+
+body {
+  background: #0a1a24;
+}
+
+.background {
+  width: 100%;
+  height: 56.25vw;
+  background: url(https://wallpapercave.com/wp/wp6373966.jpg) center/cover;
+  box-shadow: inset 0px -17vw 20vw 1vw #0a1a24;
+  position: absolute;
+  top: 80px;
+  z-index: -1;
+}
+.background img {
+  max-width: 100%;
+  max-height: 100vh;
+  box-shadow: inset 0px -17vw 30vw 1vw #131313;
+}
+.background + section {
+  margin-top: 60vmin;
+  background: transparent;
+  --dark: rgba(white, .5);
+  --dark: rgba(white, .6);
+  --darker: rgba(white, .8);
+}
+.background + section .bookmark {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.background + section .bookmark svg {
+  fill: #fff;
+}
+.background + section .album-tracks {
+  background: #141415;
+  border: none;
+}
+
+section {
+  background: #fafafa;
+  margin: 100px 56px;
+  padding: 20px 56px;
+  color: var(--darker);
+  color: rgba(255, 255, 255, 0.8);
+}
+section .album-info:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+section .album-art {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+section .album-art * {
+  border-radius: 3px;
+}
+section .album-art img {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: -80px;
+  box-shadow: 0 5px 60px -3px rgba(0, 0, 0, 0.18);
+}
+section .play {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: initial;
+  color: white;
+  background: var(--color);
+  padding: 10px;
+  text-transform: uppercase;
+  -webkit-box-flex: 1;
+          flex: 1 0 50%;
+}
+section .bookmark {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: initial;
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--color-light);
+  margin-left: 10px;
+}
+section .album-details > * {
+  padding: 10px 0;
+}
+section h2 {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: initial;
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section h2 img {
+  width: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+section h1 {
+  font-size: 50px;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+section h1 + span {
+  color: var(--dark);
+}
+section h1 + span span:first-child {
+  padding-right: 20px;
+}
+section p {
+  margin-top: 15px;
+}
+section .album-tracks {
+  background: #f8f8f8;
+  border: 1px solid #efefef;
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  section {
+    margin: 100px 36px 36px 36px;
+  }
+}
+@media (max-width: 700px) {
+  section .album-art {
+    width: 100%;
+  }
+  section .album-art img {
+    width: auto;
+    max-width: 100%;
+    margin: -100px auto 10px auto;
+    display: block;
+  }
+  section .album-details {
+    float: left;
+    max-width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  section {
+    margin: 100px 20px 20px 20px;
+    padding: 20px 16px;
+  }
+  section ol {
+    padding: 16px;
+  }
+}
+
+ol {
+  list-style-type: none;
+  padding: 20px 36px;
+  font-weight: 500;
+}
+ol li {
+  counter-increment: number;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: initial;
+  height: 45px;
+  color: var(--dark);
+}
+ol li span:not(:last-child) {
+  margin-right: 2em;
+}
+@media (max-width: 700px) {
+  ol li span:not(:last-child) {
+    margin-right: 1em;
+  }
+}
+ol li span:first-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--darker);
+}
+ol li span:first-child:before {
+  content: counter(number);
+  margin-right: 2em;
+  color: var(--dark);
+  display: inline-block;
+  text-align: end;
+  width: 20px;
+}
+
+.actions {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: initial;
+          align-items: initial;
+  align-content: initial;
+  -webkit-box-flex: 1;
+          flex: 1 1 100%;
+}
+.footer {
+            left: 0;
+            margin-top: 10px;
+            width: 100%;
+            background: linear-gradient(to bottom, darkgrey 0%, black 50%);
+            color: white;
+            text-align: center;
+            position: bottom;
+            padding: 30px;
+          
+        }
+</style>
+
+ 
+
+</head>
+<body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">RHYTHM</label>
+      <ul>
+       
+        <li><a href="#">Playlist</a></li>
+        <li><a href="#">Albums</a></li>
+        <li><a href="#">Artist</a></li>
+        <li><a href="#">Genre</a></li>
+      </ul>
+    </nav>
+    
+  </body>
+<body translate="no" >
+  <div class="background"></div>
+<section>
+  <div class="album-info">
+    <div class="album-art"><img src="https://wallpapercave.com/wp/wp4120706.jpg"/>
+      <div class="actions">
+        <div class="play">Play</div>
+        <div class="bookmark">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#faa800" height="24" viewbox="0 0 24 24" width="24">
+            <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="album-details">
+      <h2> <img src="https://media.gettyimages.com/photos/indian-singer-musician-and-producer-a-r-rahman-15th-april-2002-picture-id1184144983?s=2048x2048"/>A. R. Rahman</h2>
+      <h1>SLUMDOG MILLIONAIRE (SONGS AND MUSIC FROM THE MOTION PICTURE)</h1><span> <span>A. R. Rahman</span><span>&copy; Interscope Records</span></span>
+      <p>Slumdog Millionaire: Music from the Motion Picture is the soundtrack album of the British drama film of the same name, directed by Danny Boyle. The original score and songs were composed by A. R. Rahman, who planned the score in two months and completed it in 20 days, a far shorter time period than usual. The soundtrack has won the Golden Globe Award for Best Original Score, BAFTA Award for Best Film Music, and two Academy Awards, one for Best Original Music Score and the other for Best Original Song for "Jai Ho". The soundtrack has also won two Grammy Awards, one for the album itself and another for the song "Jai Ho". The latter song would be reworked by Ron Fair and The Pussycat Dolls into an English language adaptation "Jai Ho! (You Are My Destiny)" which would go on to become and international hit for the group. The soundtrack sold over two million units worldwide.</p>
+    </div>
+  </div>
+  <div class="album-tracks">
+    <ol>
+      <li> <span>O... Saya</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/OSaya.mp3">
+	</audio></span></li>
+	<p> </P>
+      <li> <span>Riots</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Riots.mp3">
+	</audio></span></li>
+	<p> </P>
+      <li> <span>Mausam & Escape</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://jatt.download/mrisky/dren/data2/Hindi_Movies/201510/Slumdog_Millionaire/128/Mausam_Escape.mp3/Mausam%20Escape.mp3">
+	</audio></span></li>
+	<p> </P>
+      <li> <span>Paper Planes</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Paper%20Planes%20DFA%20Remix.mp3">
+	</audio></span></li>
+	<p> </P>
+      <li> <span>Ringa Ringa</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Ringa%20Ringa.mp3">
+	</audio></span></li>
+	<p> </P>
+      <li> <span>Liquid Dance</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Liquid%20Dance.mp3">
+	</audio></span></li>
+	<p> </P>
+	  <li> <span>Aaj Ki Raat</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Aaj%20Ki%20Raat.mp3">
+	</audio></span></li>
+	<p> </P>
+	  <li> <span>Millionaire</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Millionaire.mp3">
+	</audio></span></li>
+	<p> </P>
+	  <li> <span>Gangsta Blues</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Gangsta%20Blues.mp3">
+	</audio></span></li>
+	<p> </P>
+	  <li> <span>Dreams on Fire</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Dreams%20On%20Fire.mp3">
+	</audio></span></li>
+	<p> </P>
+	  <li> <span>Jai Ho</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://hindisong.xyz/Slumdog%20Millionaire%20%282008%29/Jai%20Ho.mp3">
+	</audio></span></li>
+	<p> </P>
+	  
+      
+    </ol>
+  </div>
+</section>
+<div class="footer">
+      
+                <h5class="monospace">RHYTHM &#169;</h5>
+                
+                </div>
+				<script type="text/javascript">
+  
+  window.addEventListener("play", function(evt)
+{
+    if(window.$_currentlyPlaying && window.$_currentlyPlaying != evt.target)
+    {
+        window.$_currentlyPlaying.pause();
+    } 
+    window.$_currentlyPlaying = evt.target;
+}, true);
+
+</script>   
+  
+  
+  
+  
+
+</body>
+
+</html>

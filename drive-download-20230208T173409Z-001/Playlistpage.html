@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<style type="text/css">
+
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+.container{
+  margin: auto;
+  position: relative;
+  left: 0;  
+  right:0;
+  
+}
+.audio { width: 210px; }
+nav{
+  background: black;
+  height: 80px;
+  width: 100%;
+  font-family: Georgia;
+}
+label.logo{
+  font-family: Segoe Script;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  padding-left: 1px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  
+}
+a.active,a:hover{
+  background: purple ;
+  font-size: 20px;
+  transition: .5s;
+  color: solid white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: orange;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: transparent;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+</head>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+
+:root {
+  --color: #ffa700;
+  --color-light: #f5ede1;
+  --dark: #a6a6a6;
+   --sans-serif: 'weight', sans-serif;
+
+  }
+
+
+body {
+  background-image: url('https://images.pexels.com/photos/144429/pexels-photo-144429.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+@keyframes pulsate1 {
+  0% {
+    -webkit-transform: scale(0.4);
+    opacity: 1;
+  }
+}
+section .album-tracks {
+  border: 15px solid #000000;
+  margin: 50px 50px;
+  padding: 10px 10px;
+  color: var(--darker);
+}
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+
+
+.text-box {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: 10%;
+    margin-left: -100px; 
+}
+
+h1 {
+	font-size: 5vw;
+	font-weight: 700;
+	background-color: #000;
+	color: #fff;
+	display: block;
+	padding: .5em;
+}
+
+h1:nth-child(2) {
+	position: absolute;
+	background-color: #fff;
+	color: #74419c;
+	clip-path: inset(-1% -1% 50% -1%); // Added the negative values to prevent icky "bleed" in Chrome
+}
+section .album-tracks {
+  background: #f8f8f8;
+  border: 1px solid #fefef;
+  margin-top: 80px;
+}
+
+@media (max-width: 800px) {
+  section {
+    margin: 100px 36px 36px 36px;
+  }
+}
+@media (max-width: 700px) {
+  section .album-art {
+    width: 100%;
+  }
+}
+
+ol {
+  list-style-type: none;
+  padding: 20px 36px;
+  font-weight: 700;
+}
+ol li {
+  counter-increment: number;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: initial;
+  height: 70px;
+  color: var(--dark);
+}
+
+ol li span:first-child:before {
+  content: counter(number);
+  margin-right: 2em;
+  color: var(--dark);
+  display: inline-block;
+  text-align: end;
+  width: 20px;
+}
+
+</style>
+</head>
+<body>
+<nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+       <label class="logo"><font color="white">Rhyth</font><i><font color= "red">M</font></i></label>
+      <ul>
+<li><a href="Homepage.html">Home</a></li>
+        <li><a href="Albumpage.html">Albums</a></li>
+        <li><a class="active" href="Playlistpage.html">Playlist</a></li>
+        <li><a href="Genrepage.html">Genre</a></li>
+      </ul>
+    </nav>
+    </body>
+<body>
+<section>
+<div class="container">
+	<!-- code here -->
+	<div class="text-box">
+		<h1>▶PLAY LIST</h1>
+		<h1>▶PLAY LIST</h1>
+	</div>
+</div>
+ <div class="album-tracks">
+  <h5>  <ol>
+      <li> <span>7 Rings</span>
+	<audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="http://dl.moozika.ir/mycont/uploads/2020/01/7-rings.mp3">
+	</audio>
+</span></li>
+      <li> <span>Rain On Me</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://files.talkglitz.tv/wp-content/uploads/2020/06/Lady_Gaga_Ariana_Grande_-_Rain_On_Me_talkglitz.tv.mp3">
+	</audio></span></li>
+      <li> <span>Bang Bang</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/f7a7c2775b2b5636d6257/Jessie%20J%2C%20Ariana%20Grande%2C%20Nicki%20Minaj%20~%20Bang%20Bang%20~.mp3">
+	</audio></span></li>
+	  <li> <span>Feel Invincible</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/e59350935b2b572001af4/Skillet%20Feel%20Invincible.mp3">
+	</audio></span></li>
+      <li> <span>Back From The Dead</span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/5227c8e45b2b5799fee6b/Skillet%20-%20Back%20From%20The%20Dead%20%5BOfficial%20Audio%5D.mp3">
+	</audio></span></li>
+      <li> <span>Stars</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/56f1f1fd5b2b57ae8c80b/Marshmello%20-%20Stars%20%28Official%20Music%20Video%29.mp3">
+	</audio></span></li>
+      <li> <span>I Want To Live</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/a7d522c65b2b57d1c2490/Skillet%20-%20I%20Want%20To%20Live%20%5BOfficial%20Audio%5D.mp3">
+	</audio></span></li>
+      <li> <span>Undefeated</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/8b29cb5e5b2b584d00316/Tauren%20Wells%20-%20Undefeated%20ft.%20KB%20%28Official%29.mp3">
+	</audio></span></li>
+      <li> <span>thank u,next</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/3c48ec775b2b58483ad36/Ariana%20Grande%20-%20thank%20u%2C%20next.mp3">
+	</audio></span></li>
+      <li> <span>side on side</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/4d19288c5b2b5889559e7/Ariana%20grande%20-%20side%20to%20side.mp3">
+	</audio></span></li>
+      <li> <span>god is a women</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/9b9b2d505b2b58a09a698/Ariana%20Grande%20-%20god%20is%20a%20woman.mp3">
+	</audio></span></li>
+      <li> <span>no Tears left to cry</span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/65172f465b2b58bfa43d5/Ariana%20Grande%20-%20No%20Tears%20Left%20To%20Cry.mp3">
+	</audio></span></li>
+	  <li> <span>Famous</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/fce195a45b2b58e260f4c/Mason%20Ramsey%20-%20Famous.mp3">
+	</audio></span></li>
+      <li> <span>Lions</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/32aa0f5f5b2b58f3d6795/Skillet%20-%20Lions%20%5BOfficial%5D.mp3">
+	</audio></span></li>
+	  <li> <span>Perfect</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/79a47f6c5b2b5905578f1/Perfect%20-%20Ed%20Sheeran.mp3">
+	</audio></span></li>
+      <li> <span>Shape of you</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/5a831ad65b2b592177938/Ed%20Sheeran%20-%20Shape%20Of%20You%20%5BOfficial%5D.mp3">
+	</audio></span></li>
+      <li> <span>Thinking out loud</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/b991a3425b2b5975eb955/Ed%20Sheeran%20-%20Thinking%20Out%20Loud.mp3">
+	</audio></span></li>
+       <li> <span>I Don't care</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/63ea64035b2b598d010cc/Ed%20Sheeran%20%26%20Justin%20Bieber%20-%20I%20Don%20t%20Care%20%5BOfficial%5D.mp3">
+	</audio></span></li>
+       <li> <span>Give me Love</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/7f29a2055b2b59bffb5a2/Ed%20Sheeran%20Give%20me%20love.mp3">
+	</audio></span></li>
+       <li> <span>Beautifull People</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/2f3c57455b2b59d7071a5/Ed%20Sheeran%20-%20Beautiful%20People%20%28feat.%20Khalid%29%20%5BOfficial%5D.mp3">
+	</audio></span></li>
+       <li> <span>Lego House</span><space><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/905689a95b2b59f4f62e9/Ed%20Sheeran-%20Lego%20House%20.mp3">
+	</audio></span></li>
+      <li> <span>Out Of Hell</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/6c3aeca35b2b5a20826da/Skillet%20-%20Out%20Of%20Hell%20%28HD%29.mp3">
+	</audio></span></li>
+      <li> <span>Into You</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/c826ee025b2b5a379b8bc/Ariana%20Grande%20-%20Into%20You%20HD.mp3">
+	</audio></span></li>
+      <li> <span>Problem</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/391190445b2b5a5e9fd14/Ariana%20Grande%20-%20Problem%20ft.%20Iggy%20Azalea.mp3">
+	</audio></span></li>
+	  <li> <span>Photograph</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/42b1c7055b2b5a76cef38/ill%20Nicky%20x%20Jared%20Anthony%20x%20Cheeba%20Hawk%20-%20Photograph.mp3">
+	</audio></span></li>
+      <li> <span>Castle on the Hill</span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/550f4b4d5b2b5a92e1a93/Ed%20Sheeran%20-%20Castle%20On%20The%20Hill%20%5BOfficial%5D.mp3">
+	</audio></span></li>
+      <li> <span>Love me harder</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/8b3738a75b2b5ab5a86d3/Ariana%20Grande%2C%20The%20Weeknd%20-%20Love%20Me%20Harder.mp3">
+	</audio></span></li>
+	  <li> <span>Galway Girl</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/f3ec49475b2b5acb3b0c3/Ed%20Sheeran%20-%20Galway%20Girl%20%5BOfficial%5D.mp3">
+	</audio></span></li>
+       <li> <span>Happier</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/3c818e675b2b5aef0a28a/Marshmello%20ft.%20Bastille%20-%20Happier%20%28Official%29.mp3">
+	</audio></span></li>
+       <li> <span>Dive</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/55b0249b5b2b5b08953f2/Dive%20-%20Ed%20Sheeran.mp3">
+	</audio></span></li>
+      <li> <span>Don't call Me Angel</span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/582586b35b2b5b2516d5b/Ariana%20Grande%20-%20Don%20t%20Call%20Me%20Angel%20feat.%20Miley%20Cyrus%2C%20Lana%20Del%20Rey.mp3">
+	</audio></span></li>
+	  <li> <span>Burn It Down</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/82caa4d85b2b5b3809fdb/BURN%20IT%20DOWN%20%28Official%29%20-%20Linkin%20Park.mp3">
+	</audio></span></li>
+      <li> <span>Watching For Comets</span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/4ae0260d5b2b5b54e60e6/Skillet%20-%20Watching%20For%20Comets%20%28HD%29.mp3">
+	</audio></span></li>
+      <li> <span>Saviors Of The World</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/8a1b16f95b2b5b6fd1d62/Skillet%20-%20Saviors%20of%20the%20World%20%28HD%29.mp3">
+	</audio></span></li>
+      <li> <span>The Resistance</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/6564f74b5b2b5b81c7ef4/Skillet%20-%20The%20Resistance%20%5BOfficial%5D.mp3">
+	</audio></span></li>
+      <li> <span>Focus</span><span><audio class="audio" controls="controls">
+		<source type="audio/mpeg" src="https://dexo.cutepup.club/eefc45845b2b5b9cbb611/Ariana%20Grande%20-%20Focus.mp3">
+	</audio></span></li>
+    </ol></h>
+  </div>
+  </body>
+</html>

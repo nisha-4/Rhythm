@@ -1,0 +1,450 @@
+
+<html lang="en" >
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style type="text/css">
+    *{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav{
+  background: black;
+  height: 80px;
+  width: 100%;
+  font-family: Georgia;
+}
+label.logo{
+  
+font-family: Segoe Script;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  padding-left: 1px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  
+}
+a.active,a:hover{
+  background: transparent ;
+  font-size: 20px;
+  transition: .5s;
+  color: solid white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: orange;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: transparent;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+</style>
+</head>
+<head>
+<title>Zindagi Na Milegi Dobara</title>
+<style>
+ @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"); 
+:root {
+  --color: #faa700;
+  --color-light: #f5ede1;
+  --dark: #a7a7a7;
+  --dark: #8a8a8a;
+  --darker: #303030;
+  --sans-serif: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--sans-serif);
+  background: #eeeeee;
+}
+
+body {
+  background:#1C2220;
+        opacity: 1;
+}
+
+.background {
+  width: 100%;
+  height: 80.25vw;
+  background: url(https://wallpapercave.com/wp/wp7115206.jpg) center/cover;
+  box-shadow: inset 0px -17vw 20vw 1vw #0a1a24;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.background img {
+  max-width: 100%;
+  max-height: 100vh;
+  box-shadow: inset 0px -17vw 30vw 1vw #131313;
+}
+.background + section {
+  margin-top: 60vmin;
+  background: transparent;
+  --dark: rgba(white, .5);
+  --dark: rgba(white, .6);
+  --darker: rgba(white, .8);
+}
+.background + section .bookmark {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+.background + section .bookmark svg {
+  fill: #fff;
+}
+.background + section .album-tracks {
+  background:  #080C0B;
+  border: none;
+}
+
+section {
+  background: #fafafa;
+  margin: 100px 56px;
+  padding: 20px 56px;
+  color: var(--darker);
+  color: rgba(255, 255, 255, 0.8);
+}
+section .album-info:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+}
+section .album-art {
+  float: left;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+section .album-art * {
+  border-radius: 3px;
+}
+section .album-art img {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: -80px;
+  box-shadow: 0 5px 60px -3px rgba(0, 0, 0, 0.18);
+}
+
+section .bookmark {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: initial;
+  width: 48px;
+  height: 48px;
+  border: 3px solid var(--color-light);
+  margin-left: 10px;
+}
+section .album-details > * {
+  padding: 10px 0;
+}
+section h2 {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: initial;
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section h2 img {
+  width: 24px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+section h1 {
+  font-size: 50px;
+  font-weight: 300;
+  word-wrap: break-word;
+}
+section h1 + span {
+  color: var(--dark);
+}
+section h1 + span span:first-child {
+  padding-right: 20px;
+}
+section p {
+  margin-top: 15px;
+}
+section .album-tracks {
+  background: #f8f8f8;
+  border: 1px solid #efefef;
+  margin-top: 20px;
+}
+@media (max-width: 800px) {
+  section {
+    margin: 100px 36px 36px 36px;
+  }
+}
+@media (max-width: 700px) {
+  section .album-art {
+    width: 100%;
+  }
+  section .album-art img {
+    width: auto;
+    max-width: 100%;
+    margin: -100px auto 10px auto;
+    display: block;
+  }
+  section .album-details {
+    float: left;
+    max-width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  section {
+    margin: 100px 20px 20px 20px;
+    padding: 20px 16px;
+  }
+  section ol {
+    padding: 16px;
+  }
+}
+
+ol {
+  list-style-type: none;
+  padding: 20px 36px;
+  font-weight: 500;
+}
+ol li {
+  counter-increment: number;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+  align-content: initial;
+  height: 45px;
+  color: var(--dark);
+}
+ol li span:not(:last-child) {
+  margin-right: 2em;
+}
+@media (max-width: 700px) {
+  ol li span:not(:last-child) {
+    margin-right: 1em;
+  }
+}
+ol li span:first-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: var(--darker);
+}
+ol li span:first-child:before {
+  content: counter(number);
+  margin-right: 2em;
+  color: var(--dark);
+  display: inline-block;
+  text-align: end;
+  width: 20px;
+}
+
+.actions {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: initial;
+  -webkit-box-pack: initial;
+          justify-content: initial;
+  -webkit-box-align: initial;
+          align-items: initial;
+  align-content: initial;
+  -webkit-box-flex: 1;
+          flex: 1 1 100%;
+}
+.footer {
+            left: 0;
+            margin-top: 10px;
+            width: 100%;
+            background: linear-gradient(to bottom, darkgrey 0%, black 50%);
+            color: white;
+            text-align: center;
+            position: bottom;
+            padding: 30px;
+          
+        }
+
+</style>
+
+ 
+
+</head>
+</head>
+<body>
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"><font color="white">Rhyth</font><i><font color= "red">M</font></i></label>
+      <ul>
+       <li><a href="Homepage.html">Home</a></li>
+        <li><a href="Playlistpage.html">Playlist</a></li>
+        <li><a href="Albumpage.html">Albums</a></li>
+        <li><a href="Genrepage.html">Genre</a></li>
+      </ul>
+    </nav>
+    
+  </body>
+
+<body translate="no" >
+  <div class="background"></div>
+<section>
+  <div class="album-info">
+    <div class="album-art"><img src="https://wallpapercave.com/wp/wp7115122.jpg"/>
+      <div class="actions">
+        
+        <div class="bookmark">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="#faa800" height="24" viewbox="0 0 24 24" width="24">
+            <path d="M17 3H7c-1.1 0-1.99.9-1.99 2L5 21l7-3 7 3V5c0-1.1-.9-2-2-2zm0 15l-5-2.18L7 18V5h10v13z"></path>
+            <path d="M0 0h24v24H0z" fill="none"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="album-details">
+      <h2> <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Shankar-Ehsaan-Loy_Raymond_Weil.jpg"/>Shankar–Ehsaan–Loy</h2>
+      <h1>ZINDAGI NA MILEGI DOBARA (2011) (SONGS FROM THE ORIGINAL MOTION PICTURE) </h1><span> <span>Shankar–Ehsaan–Loy</span><span>&copy; T-series 2011</span></span>
+      <p>Zindagi Na Milegi Dobara is the soundt
+
+Nisha, [09.12.20 19:05]
+rack album to Zoya Akhtar's 2011 Hindi film Zindagi Na Milegi Dobara starring Hrithik Roshan, Abhay Deol and Farhan Akhtar. The film has seven songs and two remixes composed by Shankar-Ehsaan-Loy with lyrics by Javed Akhtar. The album marks the second collaboration of the trio with Zoya Akhtar, and eighth with Excel Entertainment. The music was released on 17 June 2011 by T-Series.</p>
+    </div>
+  </div>
+  <div class="album-tracks">
+    <ol>
+      <li> <span>Dhil Dhadakne Do</span><span><audio class="audio" controls="controls">
+  <source type="audio/mpeg" src="http://dns4.vippendu.com/download/48k-uach/Dil-Dhadakne-Do.mp3">
+ </audio></span></li>
+ <p> </P>
+      <li> <span>Ik Junoon</span><span><audio class="audio" controls="controls">
+  <source type="audio/mpeg" src="http://dns4.vippendu.com/download/48k-uacl/Ik-Junoon-(Paint-It-Red).mp3">
+ </audio></span></li>
+ <p> </P>
+      <li> <span>Khwabon Ke Parindey</span><span><audio class="audio" controls="controls">
+  <source type="audio/mpeg" src="http://dns4.vippendu.com/download/48k-uacy/Khaabon-Ke-Parinday.mp3">
+ </audio></span></li>
+ <p> </P>
+      <li> <span>Senorita</span><span><audio class="audio" controls="controls">
+  <source type="audio/mpeg" src="http://dns4.vippendu.com/download/48k-uacu/Senorita.mp3">
+ </audio></span></li>
+ <p> </P>
+      <li> <span>Der Lagi Lekin</span><span><audio class="audio" controls="controls">
+  <source type="audio/mpeg" src="http://dns4.vippendu.com/download/48k-uack/Der-Lagi-Lekin.mp3">
+ </audio></span></li>
+ <p> </P>
+      <li> <span>Sooraj ke Baahon mein</span><span><audio class="audio" controls="controls">
+  <source type="audio/mpeg" src="http://dns4.vippendu.com/download/48k-uacj/Sooraj-Ki-Baahon-Mein.mp3">
+ </audio></span></li>
+ <p> </P>
+  
+ 
+   <li> <span>Senorita - Remix</span><span><audio class="audio" controls="controls">
+  <source type="audio/mpeg" src="http://dns4.vippendu.com/download/48k-uacg/Senorita-(Remix).mp3">
+ </audio></span></li>
+ <p> </P>
+   
+      
+    </ol>
+  </div>
+</section>
+<div class="footer">
+ 
+      
+                <h5class="monospace">RHYTHM &#169;</h5>
+                
+                </div>
+    <script type="text/javascript">
+  
+  window.addEventListener("play", function(evt)
+{
+    if(window.$_currentlyPlaying && window.$_currentlyPlaying != evt.target)
+    {
+        window.$_currentlyPlaying.pause();
+    } 
+    window.$_currentlyPlaying = evt.target;
+}, true);
+</script>
+  
+  
+  
+  
+  
+
+
+
+</html>
